@@ -1,4 +1,4 @@
-# Material-Themed-Instructure.com
+# Material Themed Instructure.com (Canvas)
 > A Custom User Style For Instructure.com (Set for washk12.instructure.com)
 
 ## Screenshots
