@@ -1,0 +1,671 @@
+@-moz-document domain("washk12.instructure.com") {
+/* --- Sidebar Navigation (Fixed Left) --- */
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    background: #3e3e3e !important;
+    border-right: 2px solid #E0E0E0 !important;
+    padding: 15px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    z-index: 1000;
+    /* Keeps the navbar on top */
+}
+
+/* --- Main Content Adjustment --- */
+body {
+    padding-left: 250px;
+    /* Pushes everything in the body to the right of the navbar */
+}
+
+/* --- Main Content --- */
+#content {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: -10px !important;
+    /* Slightly adjusted to the left */
+}
+
+/* --- Navbar Header --- */
+#header h2 {
+    font-size: 18px !important;
+    color: #f32121 !important;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* --- Navigation Links --- */
+#header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#header li {
+    padding: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+#header li a {
+    color: #424242 !important;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#header li:hover {
+    background: rgba(33, 150, 243, 0.1) !important;
+    border-left: 4px solid #f32121 !important;
+}
+
+/* --- Scrollbar Customization --- */
+#header::-webkit-scrollbar {
+    width: 8px;
+}
+
+#header::-webkit-scrollbar-track {
+    background: #E0E0E0;
+}
+
+#header::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 10px;
+}
+
+#header::-webkit-scrollbar-thumb:hover {
+    background: #807e7e;
+}
+
+/* --- Animation for Smooth Appearance --- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#header {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+#content-main > div:nth-child(7) {
+    border-radius: 15px !important;
+    /* Rounds the corners of the div */
+    overflow: hidden;
+    /* Ensures content doesn't overflow outside the rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: adds a subtle shadow around the div */
+    padding: 20px;
+    /* Optional: adds some padding inside the div */
+}
+#attByClass {
+    border-top-left-radius: 15px !important;
+    /* Rounds the top-left corner */
+    border-top-right-radius: 15px !important;
+    /* Rounds the top-right corner */
+    overflow: hidden;
+    /* Ensures content doesn't spill out of the rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: adds a subtle shadow around the div */
+    padding: 20px;
+    /* Optional: adds some padding inside the div */
+}
+#attTotal {
+    border-bottom-left-radius: 15px !important;
+    /* Rounds the bottom-left corner */
+    overflow: hidden;
+    /* Ensures content doesn't spill out of the rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: adds a subtle shadow around the div */
+    padding: 20px;
+    /* Optional: adds some padding inside the div */
+}
+#termTarTotal {
+    border-bottom-right-radius: 15px !important;
+    /* Rounds the bottom-left corner */
+}
+#quickLookup > table:nth-child(2) {
+    border-radius: 15px !important;
+    /* Rounds the bottom-left corner */
+}
+#gpa_info > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) {
+    border-top-left-radius: 15px !important;
+    /* Rounds the bottom-left corner */
+}
+#gpa_info > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) {
+    border-top-right-radius: 15px !important;
+    /* Rounds the bottom-left corner */
+}
+#legend {
+    border-radius: 15px !important;
+    /* Rounds the corners of the div */
+    overflow: hidden;
+    /* Ensures content doesn't overflow outside the rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: adds a subtle shadow around the div */
+    padding: 20px;
+    /* Optional: adds some padding inside the div */
+}
+#content-main {
+    border: 1px solid #acacac !important;
+    /* Adds a border around the element */
+    border-radius: 15px !important;
+    /* Applies the same roundness to all corners */
+    overflow: hidden;
+    /* Ensures content doesn't spill out of the rounded corners */
+    padding: 20px;
+    /* Optional: adds some padding inside the element */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow around the element */
+}
+#tools > li:nth-child(2) > a:nth-child(2) {
+    display: inline-block;
+    /* Makes the link behave like a block-level element, but only as wide as its content */
+    background-color: #f32121;
+    /* Button-like blue background */
+    color: white !important;
+    /* White text */
+    padding: 10px 20px;
+    /* Adds padding to make the button larger */
+    text-align: center;
+    /* Centers the text inside the button */
+    border-radius: 8px;
+    /* Rounds the corners to make it look like a pill-shaped button */
+    text-decoration: none !important;
+    /* Removes the default underline from the link */
+    font-size: 16px;
+    /* Sets a readable font size */
+    font-weight: 500;
+    /* Makes the font weight bold */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Adds smooth transitions on hover */
+}
+
+#tools > li:nth-child(2) > a:nth-child(2):hover {
+    background-color: #d21919;
+    /* Changes to a darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Adds a subtle shadow on hover */
+}
+#tools > li:nth-child(3) > a:nth-child(2) {
+    display: inline-block;
+    /* Makes the link behave like a block-level element */
+    background-color: #f32121;
+    /* Button-like blue background */
+    color: white !important;
+    /* White text */
+    padding: 10px 20px;
+    /* Adds padding to make the button larger */
+    text-align: center;
+    /* Centers the text inside the button */
+    border-radius: 8px;
+    /* Rounds the corners for a pill-shaped button */
+    text-decoration: none !important;
+    /* Removes the underline from the link */
+    font-size: 16px;
+    /* Sets a readable font size */
+    font-weight: 500;
+    /* Makes the font weight bold */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition on hover */
+}
+
+#tools > li:nth-child(3) > a:nth-child(2):hover {
+    background-color: #d21919;
+    /* Changes to a darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Adds a subtle shadow on hover */
+}
+#btnLogout {
+    display: inline-block;
+    /* Makes it behave like a block-level element */
+    background-color: #f32121;
+    /* Pinkish background for logout button */
+    color: white !important;
+    /* White text */
+    padding: 10px 20px;
+    /* Adds padding to make it larger */
+    text-align: center;
+    /* Centers the text inside the button */
+    border-radius: 8px;
+    /* Rounds the corners to make it pill-shaped */
+    text-decoration: none !important;
+    /* Removes underline */
+    font-size: 16px;
+    /* Sets a readable font size */
+    font-weight: 500;
+    /* Slightly bold text */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth hover effect */
+}
+
+
+#btnLogout:hover {
+    background-color: #d21919;
+    /* Darker pink on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Adds a subtle shadow on hover */
+}
+#userName {
+    background-color: #FAFAFA;
+    /* Same color as the background */
+    border: 2px solid #E0E0E0;
+    /* Adds a border around the card */
+    border-radius: 8px;
+    /* Round corners like the buttons */
+    padding: 10px 20px;
+    /* Slightly reduced padding to make the card smaller and align it better */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow */
+    margin-top: 0px;
+    /* Slightly higher by reducing the margin-top */
+    margin-bottom: 10px;
+    /* Optional: space below the card */
+    display: inline-block;
+    /* Makes the card behave like a block-level element */
+    text-align: center;
+    /* Centers the text inside the card */
+    width: auto;
+    /* Makes the width fit the content */
+    font-size: 16px;
+    /* Ensures the text size matches the buttons */
+    font-weight: 500;
+    /* Slightly bold text */
+}
+
+#students-list {
+    background-color: #f32121;
+    /* Pinkish background for logout button */
+}
+#usercontext-bar {
+    background-color: #f32121;
+    /* Pinkish background for logout button */
+}
+
+/* Apply text color variants to all links inside #content-main, excluding specific spans */
+#content-main a {
+    color: #2196F3 !important;
+    /* Blue text color */
+    text-decoration: none !important;
+    /* Removes underline */
+    font-size: 16px !important;
+    /* Sets a readable font size */
+    font-weight: 500 !important;
+    /* Slightly bold text */
+    transition: color 0.3s ease;
+    /* Smooth transition for text color change */
+}
+
+/* Add hover effect to change text color */
+#content-main a:hover {
+    color: #1976D2 !important;
+    /* Darker blue text color on hover */
+}
+
+/* Manually set specific spans inside links to black color, font size 14px, and bold */
+#GradesandAttendanceCTHS a > span:nth-child(1),
+#GradesandAttendanceUOHS a > span:nth-child(1),
+#StandardsGrades a > span:nth-child(1) {
+    color: black !important;
+    /* Black text color */
+    font-size: 14px !important;
+    /* Font size 14px */
+    font-weight: bold !important;
+    /* Bold font weight */
+}
+
+/* Ensure the links containing those specific spans are set to black, 14px, and bold */
+#GradesandAttendanceCTHS a,
+#GradesandAttendanceUOHS a,
+#StandardsGrades a {
+    color: black !important;
+    /* Ensures the link text color is black */
+    font-size: 14px !important;
+    /* Ensures the font size is 14px */
+    font-weight: bold !important;
+    /* Ensures the font weight is bold */
+}
+#GradesandAttendanceCTHS > span:nth-child(1),
+#GradesandAttendanceUOHS > span:nth-child(1),
+#StandardsGrades > span:nth-child(1) {
+    color: black !important;
+    /* Black text color */
+    font-size: 14px !important;
+    /* Font size 14px */
+    font-weight: bold !important;
+    /* Bold font weight */
+}
+
+/* Ensure the links containing those specific spans are set to black, 14px, and bold */
+#GradesandAttendanceCTHS,
+#GradesandAttendanceUOHS,
+#StandardsGrades {
+    color: black !important;
+    /* Ensures the link text color is black */
+    font-size: 14px !important;
+    /* Ensures the font size is 14px */
+    font-weight: bold !important;
+    /* Ensures the font weight is bold */
+}
+/* Apply the same styling as #btnLogout to the link inside div:nth-child(4) */
+#content-main > div:nth-child(4) > a:nth-child(1) {
+    display: inline-block;
+    /* Makes it behave like a block-level element */
+    background-color: #f32121;
+    /* Blue background */
+    color: white !important;
+    /* White text */
+    padding: 10px 20px;
+    /* Adds padding for button-like appearance */
+    text-align: center;
+    /* Centers the text inside the button */
+    border-radius: 8px;
+    /* Rounds the corners to make it pill-shaped */
+    text-decoration: none !important;
+    /* Removes underline */
+    font-size: 16px;
+    /* Sets a readable font size */
+    font-weight: 500;
+    /* Slightly bold text */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth hover effect */
+}
+
+/* Hover effect for the link, matching the #btnLogout hover */
+#content-main > div:nth-child(4) > a:nth-child(1):hover {
+    background-color: #d21919;
+    /* Darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Adds a subtle shadow on hover */
+}
+/* Apply the same styles from div:nth-child(7) to div:nth-child(6) */
+#content-main > div:nth-child(6) {
+    border-radius: 15px !important;
+    /* Rounds the corners of the div */
+    overflow: hidden;
+    /* Ensures content doesn't overflow outside the rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: adds a subtle shadow around the div */
+    padding: 20px;
+    /* Optional: adds some padding inside the div */
+}
+#content-main > h1:nth-child(3) {
+    text-align: center;
+    /* Centers the text */
+}
+#container {
+    border: none !important;
+    /* Removes any border */
+    outline: none !important;
+    /* Removes any outline */
+    box-shadow: none !important;
+    /* Removes any box-shadow */
+}
+
+#sticky-container {
+    position: sticky;
+    top: 50px;  /* Adjust if needed to sit below the main navbar */
+    background-color: #2D3B45;  /* Instructure's dark grey */
+    color: white;
+    padding: 10px 20px;  /* Less compact */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* Slightly stronger shadow */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 15px;
+    font-weight: 500;
+    z-index: 1000;  /* Ensures it stays above other content */
+}
+
+/* Style the links inside */
+#sticky-container a {
+    color: #E3E3E3 !important;  /* Light grey text for contrast */
+    text-decoration: none;
+    padding: 8px 12px;  /* More spacing for better clickability */
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 15px;
+}
+
+/* Hover effect */
+#sticky-container a:hover {
+    margin-left: 5px;
+    background-color: #1E2A32;  /* Slightly darker than container */
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+#section-tabs-header-subtitle {
+    background-color: #2D3B45 !important;  /* Match sticky container */
+    color: #2D3B45 !important;  /* Same as background to "hide" text */
+    border-color: #2D3B45 !important;  /* Hide any borders */
+    box-shadow: none !important;  /* Remove shadows */
+    visibility: hidden;  /* Hides the element but keeps its space */
+    height: 0 !important;  /* Collapses it */
+    overflow: hidden !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+#content {
+    margin-left: 5px !important;  /* Moves it slightly to the right to avoid overlap */
+    background-color: #2D3B45 !important;  /* Matches Instructure’s dark theme */
+    border-radius: 10px !important;  /* Rounded corners */
+    padding: 15px !important;  /* Keeps spacing clean */
+    border: 1px solid #444 !important;  /* Subtle border for definition */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;  /* Soft shadow */
+}
+#right-side-wrapper {
+    width: 20px !important; /* Make it smaller, serving as a buffer */
+    background: transparent !important; /* Make it invisible */
+    overflow: hidden !important; /* Hide any content inside it */
+}
+
+#right-side-wrapper {
+    width: 20px !important; /* Make it smaller, serving as a buffer */
+    background: transparent !important; /* Make the background invisible */
+    overflow: hidden !important; /* Ensure no content overflows */
+}
+
+#right-side-wrapper > * {
+    visibility: hidden !important; /* Hides all elements inside the right-side wrapper */
+}
+/* Container for header and wrapper */
+#header-wrapper {
+    display: flex;
+    align-items: flex-start;  /* Aligns header and wrapper to the top */
+}
+
+/* Make sure the header and wrapper are positioned side by side */
+#header {
+    flex: 0 0 auto; /* Ensures the header keeps its natural width */
+}
+
+/* Position wrapper next to the header */
+/* Ensure #header and #wrapper are in the same flex container */
+body {
+    display: flex;
+    margin: 0;
+}
+
+/* This will ensure #header stays on the left, and #wrapper is right next to it */
+#header {
+    width: 250px; /* or whatever width your navigation is */
+    flex-shrink: 0; /* Prevents the header from shrinking */
+}
+
+#wrapper {
+    flex-grow: 1;  /* This will make the wrapper take the remaining space */
+}
+
+#content {
+    color: black !important; /* Forces text color to black */
+}
+/* Apply the same style to all buttons in #content */
+#content .btn {
+    background-color: #2D3B45 !important; /* Dark grey background */
+    color: white !important;  /* White text color */
+    padding: 8px 16px;  /* Adds padding to make it larger */
+    border-radius: 8px;  /* Rounds the corners */
+    border: 1px solid #444444;  /* Light border for subtle contrast */
+    font-size: 14px;  /* Slightly smaller text */
+    font-weight: 500;  /* Slightly bold text */
+    text-align: center;  /* Centers the text */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;  /* Smooth hover effect */
+}
+
+/* Hover effect for buttons */
+#content .btn:hover {
+    background-color: #1E2A32 !important;  /* Lighter grey on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Adds a subtle shadow on hover */
+}
+/* Apply sticky container style to the element */
+#sequence_footer > div:nth-child(2) > div:nth-child(1) {
+    background-color: #2D3B45; /* Dark grey background */
+    color: white; /* White text color */
+    border-radius: 15px; /* Rounded corners */
+    padding: 15px; /* Padding inside the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Apply .btn styles for the buttons inside the footer */
+/* Style the buttons in the footer or anywhere they appear */
+.css-iclrqq-view--inlineBlock-baseButton {
+    background-color: #2D3B45 !important; /* Dark grey background */
+    color: white !important; /* White text */
+    padding: 8px 16px; /* Padding for the button */
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #444444; /* Light border */
+    font-size: 14px; /* Font size */
+    font-weight: 500; /* Slightly bold text */
+    display: inline-block; /* Ensure it behaves like a button */
+    text-align: center; /* Center align the text */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    text-decoration: none !important; /* Remove underline */
+}
+
+/* Hover effect for the button */
+.css-iclrqq-view--inlineBlock-baseButton:hover {
+    background-color: #1E2A32 !important; /* Lighter grey on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Style the icon and text inside the button */
+.css-1f6zcte-baseButton__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000 !important;
+}
+
+/* Adjust the icon's size and color */
+.css-1xnn9jb-inlineSVG-svgIcon {
+    width: 1.5em; /* Adjust icon size */
+    height: 1.5em; /* Adjust icon size */
+    fill: #1e2a32; /* White color for the icon */
+    margin-right: 8px; /* Space between icon and text */
+}
+#dashboard_header_container > div:nth-child(1) {
+    border-top-style : none;
+    border-top-left-radius : 0px;
+    border-top-right-radius : 0px;
+    border-bottom-right-radius : 18px;
+    border-bottom-left-radius : 18px;
+    margin-left: 1.2px;
+    background-color: #647a89 !important;
+}
+#course_home_content>div:nth-child(3) {
+    background-color: #647a89;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+        
+}
+#context_modules_sortable_container {
+    background-color: #647a89;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+#context_module_235230>div:nth-child(2) {
+    background-color: #2D3B45;
+    color: black;
+    border-color: #647a89;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+#context_module_235230>div:nth-child(2)>span:nth-child(3)>span:nth-child(2) {
+    color: black;
+}
+#context_module_235230>div:nth-child(2)>span:nth-child(4)>span:nth-child(2) {
+    color: black;
+}
+#expand_collapse_all {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#course_home_content>div:nth-child(3)>div:nth-child(1)>div:nth-child(1)>form:nth-child(2)>button:nth-child(3) {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#dashboard_header_container>div:nth-child(1)>span:nth-child(1)>span:nth-child(1)>span:nth-child(1)>span:nth-child(1) {
+    margin-left: 5px;
+}
+#DashboardCard_Container>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>nav:nth-child(2) {
+  display: none;
+}
+#DashboardCard_Container>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>nav:nth-child(2) {
+  display: none;
+}
+
+#DashboardCard_Container>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>nav:nth-child(2) {
+  display: none;
+}
+
+#DashboardCard_Container>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>nav:nth-child(2) {
+  display: none;
+}
+
+#DashboardCard_Container>div:nth-child(1)>div:nth-child(1)>div:nth-child(4)>nav:nth-child(2) {
+  display: none;
+}
+
+#DashboardCard_Container>div:nth-child(1)>div:nth-child(1)>div:nth-child(5)>nav:nth-child(2) {
+  display: none;
+}
+
+#DashboardCard_Container>div:nth-child(1)>div:nth-child(1)>div:nth-child(6)>nav:nth-child(2) {
+  display: none;
+}
+
+#DashboardCard_Container>div:nth-child(1)>div:nth-child(1)>div:nth-child(7)>nav:nth-child(2) {
+  display: none;
+}
+
+#DashboardCard_Container>div:nth-child(1)>div:nth-child(1)>div:nth-child(8)>nav:nth-child(2) {
+  display: none;
+}
+
+#DashboardCard_Container>div:nth-child(1)>div:nth-child(1)>div:nth-child(9)>nav:nth-child(2) {
+  display: none;
+}
+
+#DashboardCard_Container>div:nth-child(1)>div:nth-child(1)>div:nth-child(10)>nav:nth-child(2) {
+  display: none;
+}
+
+
+}
